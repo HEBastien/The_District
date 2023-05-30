@@ -1,8 +1,6 @@
 <?php
     $cat=indexcat ();
     $plat=indexplat ();
-
-
 ?>
 <!-- Catégorie -->
 <div class='row no-gutters'>  

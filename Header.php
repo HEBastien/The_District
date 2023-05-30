@@ -1,7 +1,5 @@
 <?php
-require 'db.class.php' ;
 require 'dao.php' ;
-$DB = new DB('') ;
 ?>
 
 <!DOCTYPE html>

@@ -1,10 +1,10 @@
 <?php
 class DB{
 
-    private $host = 'localhost' ;
-    private $username = 'root' ;
-    private $password = 'Caline1998!' ;
-    private $database = 'The_District' ;
+    private $host = 'localhost';
+    private $username = 'root';
+    private $password = 'Caline1998!';
+    private $database = 'The_District';
     private $db;
 
         public function __construct($host = null, $username = null, $password = null, $database = null){ 

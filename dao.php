@@ -1,6 +1,5 @@
 <?php
-require 'db.class.php' ;
-$DB = new DB('') ;
+require ("db.php");
 // requête pour tous 
 function get_id (){
     if(isset($_get["id"])){
@@ -13,8 +12,8 @@ function get_id (){
 }
 // requête index
 function indexcat (){
-    $DB = new DB('') ;
-    $requete=$DB->query("SELECT libelle, image, id from categorie where active='Yes' LIMIT 6") ;
+    $DB = DB() ;
+    $requete= $DB->query("SELECT libelle, image, id from categorie where active='Yes' LIMIT 6") ;
     $array=$requete->fetchAll(PDO::FETCH_OBJ);
     $requete->closeCursor() ;
     return $array;
@@ -23,7 +22,7 @@ function indexcat (){
 
 
 function indexplat (){
-    $DB = new DB('') ;
+    $DB = DB() ;
     $requete=$DB->query("SELECT libelle, image, id from plat where active='Yes' LIMIT 3") ;
     $array=$requete->fetchAll(PDO::FETCH_OBJ);
     $requete->closeCursor() ;
@@ -34,7 +33,7 @@ function indexplat (){
 // requete catégorie
 
 function categorie (){
-    $DB = new DB('') ;
+    $DB = DB() ;
     $requete=$DB->query("SELECT libelle, image, id from categorie where active='Yes'") ;
     $array=$requete->fetchAll(PDO::FETCH_OBJ);
     $requete->closeCursor() ;
@@ -43,7 +42,7 @@ function categorie (){
 }
 //requête catspe
 function platcatspe($id){
-    $DB = new DB('') ;
+    $DB = DB() ;
     $requete=$DB->prepare("SELECT libelle, image, description, prix FROM plat WHERE id_categorie= :id ") ;
     $requete->bindValue(":id",$id,PDO::PARAM_INT);
     $requete->execute() ;

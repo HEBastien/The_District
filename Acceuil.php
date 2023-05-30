@@ -1,4 +1,5 @@
 <?php
-include 'Header.php' ;
-include 'Footer.php' ;
+require 'Header.php' ;
+require "assets/content/user/index_cat.php";
+require 'Footer.php' ;
 ?>
