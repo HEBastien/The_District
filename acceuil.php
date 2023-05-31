@@ -1,5 +1,5 @@
 <?php
-require 'Header.php' ;
+require 'header.php' ;
 require "assets/content/user/index_cat.php";
-require 'Footer.php' ;
+require 'footer.php' ;
 ?>

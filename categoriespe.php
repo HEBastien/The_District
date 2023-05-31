@@ -1,5 +1,5 @@
 <?php
-include 'Header.php' ;
-include 'assets\content\user\index_cat.php';
-include 'Footer.php' ;
+include 'header.php' ;
+include 'assets/content/user/catspe_content.php';
+include 'footer.php' ;
 ?>

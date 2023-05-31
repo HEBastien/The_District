@@ -1,12 +1,12 @@
 <?php
-function DB(){
+function ConnexionDB(){
     $servername = "localhost" ;
     $username = "root" ;
-    $password = "Caline1998!" ;
+    $password = "PepiCovid6" ;
     $dbnom =  "the_district" ;
 
     try {
-        $pdo = new PDO("mysql:host=$servername;dbnom=$dbnom", $username, $password);
+        $pdo = new PDO("mysql:host=$servername;dbname=$dbnom", $username, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
